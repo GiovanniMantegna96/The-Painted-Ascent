@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" width="1000">
+  <rect width="1400" height="640" fill="#F5EEE2"/>
+  <defs>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#B8203A"/></marker>
+    <marker id="p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#6B3F8A"/></marker>
+  </defs>
+
+  <!-- CHARACTER card -->
+  <rect x="40" y="40" width="470" height="560" rx="22" fill="#FBF6EE" stroke="#B8203A" stroke-width="4"/>
+  <text x="275" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#B8203A">The character</text>
+  <text x="275" y="126" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#7a6a6e">the same for every object</text>
+  <!-- angel -->
+  <g transform="translate(275 225)">
+    <path d="M-20 -5 C -70 -40 -85 10 -60 30 C -50 20 -35 15 -22 15 Z" fill="#F1E6D4" stroke="#B8203A" stroke-width="4"/>
+    <path d="M20 -5 C 70 -40 85 10 60 30 C 50 20 35 15 22 15 Z" fill="#F1E6D4" stroke="#B8203A" stroke-width="4"/>
+    <rect x="-24" y="-10" width="48" height="60" rx="20" fill="#F1E6D4" stroke="#B8203A" stroke-width="4"/>
+    <circle cx="0" cy="-38" r="30" fill="#F1E6D4" stroke="#B8203A" stroke-width="4"/>
+    <path d="M-24 -60 L -30 -78 L -12 -66 M24 -60 L 30 -78 L 12 -66" fill="none" stroke="#B8203A" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#4A3A40">
+    <circle cx="90" cy="345" r="18" fill="#B8203A"/><text x="90" y="354" text-anchor="middle" fill="#fff" font-weight="700" font-size="22">1</text>
+    <text x="124" y="354">turns towards the crystal</text>
+    <circle cx="90" cy="405" r="18" fill="#B8203A"/><text x="90" y="414" text-anchor="middle" fill="#fff" font-weight="700" font-size="22">2</text>
+    <text x="124" y="414">walks up to it</text>
+    <circle cx="90" cy="465" r="18" fill="#B8203A"/><text x="90" y="474" text-anchor="middle" fill="#fff" font-weight="700" font-size="22">3</text>
+    <text x="124" y="474">plays the animation</text>
+    <circle cx="90" cy="525" r="18" fill="#B8203A"/><text x="90" y="534" text-anchor="middle" fill="#fff" font-weight="700" font-size="22">4</text>
+    <text x="124" y="534">gives control back</text>
+  </g>
+
+  <!-- CRYSTAL card -->
+  <rect x="890" y="40" width="470" height="560" rx="22" fill="#FBF6EE" stroke="#6B3F8A" stroke-width="4"/>
+  <text x="1125" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#6B3F8A">The crystal</text>
+  <text x="1125" y="126" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#7a6a6e">only knows about itself</text>
+  <!-- crystal -->
+  <g transform="translate(1125 225)">
+    <path d="M0 -90 L 34 -50 L 34 60 L 0 80 L -34 60 L -34 -50 Z" fill="#E7C6E0" stroke="#6B3F8A" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M0 -90 L 0 80 M-34 -50 L 0 -30 L 34 -50" fill="none" stroke="#6B3F8A" stroke-width="2.5" opacity=".6"/>
+    <path d="M-60 0 A 60 20 0 0 0 58 4" fill="none" stroke="#6B3F8A" stroke-width="4" marker-end="url(#p)"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#4A3A40">
+    <text x="940" y="354">offers its actions:</text>
+    <g transform="translate(960 372)">
+      <rect width="300" height="96" rx="14" fill="#2A1F26"/>
+      <circle cx="34" cy="28" r="15" fill="none" stroke="#C9923A" stroke-width="3"/><text x="34" y="36" text-anchor="middle" fill="#F1E6D4" font-weight="700" font-size="20">R</text>
+      <text x="62" y="37" fill="#F1E6D4" font-size="24">Rotate</text>
+      <circle cx="34" cy="68" r="15" fill="none" stroke="#9a8a8e" stroke-width="3"/><text x="34" y="76" text-anchor="middle" fill="#F1E6D4" font-weight="700" font-size="20">E</text>
+      <text x="62" y="77" fill="#F1E6D4" font-size="24">Listen</text>
+    </g>
+    <text x="940" y="514">rotates by one fixed step</text>
+    <text x="940" y="554">and updates its light beam</text>
+  </g>
+
+  <!-- messages between them -->
+  <path d="M880 250 L 530 250" stroke="#6B3F8A" stroke-width="5" marker-end="url(#p)"/>
+  <rect x="560" y="176" width="290" height="56" rx="10" fill="#F5EEE2"/>
+  <text x="705" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#6B3F8A">"come here and</text>
+  <text x="705" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#6B3F8A">do Rotate"</text>
+
+  <path d="M520 470 L 870 470" stroke="#B8203A" stroke-width="5" marker-end="url(#r)"/>
+  <text x="705" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#B8203A">"rotate now"</text>
+  <text x="705" y="510" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#7a6a6e">how it rotates is up to the crystal</text>
+</svg>

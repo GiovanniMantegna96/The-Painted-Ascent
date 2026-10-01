@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1000">
+  <rect width="1400" height="900" fill="#F5EEE2"/>
+  <defs>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#B8203A"/></marker>
+    <marker id="p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#6B3F8A"/></marker>
+    <!-- crystal seen from above -->
+    <g id="cry">
+      <path d="M0 -42 L 36 -21 L 36 21 L 0 42 L -36 21 L -36 -21 Z" fill="#E7C6E0" stroke="#6B3F8A" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M0 -42 L 0 42 M-36 -21 L 36 21 M36 -21 L -36 21" stroke="#6B3F8A" stroke-width="2" opacity=".45"/>
+    </g>
+    <!-- character seen from above, facing +x -->
+    <g id="pl">
+      <circle r="22" fill="#F1E6D4" stroke="#B8203A" stroke-width="5"/>
+      <path d="M25 -11 L 40 0 L 25 11 Z" fill="#B8203A"/>
+    </g>
+    <!-- interaction panel -->
+    <g id="panel">
+      <rect width="170" height="74" rx="12" fill="#2A1F26"/>
+      <circle cx="26" cy="22" r="12" fill="none" stroke="#9a8a8e" stroke-width="3"/><text x="26" y="29" text-anchor="middle" fill="#F1E6D4" font-family="Arial, sans-serif" font-weight="700" font-size="16">R</text>
+      <text x="48" y="29" fill="#F1E6D4" font-family="Arial, sans-serif" font-size="20">Rotate</text>
+      <circle cx="26" cy="54" r="12" fill="none" stroke="#9a8a8e" stroke-width="3"/><text x="26" y="61" text-anchor="middle" fill="#F1E6D4" font-family="Arial, sans-serif" font-weight="700" font-size="16">E</text>
+      <text x="48" y="61" fill="#F1E6D4" font-family="Arial, sans-serif" font-size="20">Listen</text>
+    </g>
+  </defs>
+
+  <!-- panel frames -->
+  <g fill="#FBF6EE" stroke="#d8cbb8" stroke-width="3">
+    <rect x="30" y="30" width="655" height="405" rx="20"/>
+    <rect x="715" y="30" width="655" height="405" rx="20"/>
+    <rect x="30" y="465" width="655" height="405" rx="20"/>
+    <rect x="715" y="465" width="655" height="405" rx="20"/>
+  </g>
+
+  <!-- ============ 1 ============ -->
+  <g transform="translate(30 30)">
+    <circle cx="44" cy="46" r="22" fill="#4A3A40"/><text x="44" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#fff">1</text>
+    <text x="80" y="54" font-family="Georgia, serif" font-size="28" fill="#4A3A40">The player gets close</text>
+    <circle cx="440" cy="230" r="125" fill="#6B3F8A" fill-opacity=".07" stroke="#6B3F8A" stroke-width="2.5" stroke-dasharray="6 8"/>
+    <use href="#cry" x="440" y="230"/>
+    <use href="#pl" transform="translate(345 270) rotate(-20)"/>
+    <use href="#panel" x="80" y="150"/>
+    <path d="M256 186 L 400 214" stroke="#6B3F8A" stroke-width="3" stroke-dasharray="5 6" marker-end="url(#p)"/>
+    <text x="40" y="345" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">The crystal sends its list of actions.</text>
+    <text x="40" y="375" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">One panel on screen shows them.</text>
+    <rect x="510" y="358" width="120" height="30" rx="15" fill="#6B3F8A"/><text x="570" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#fff">CRYSTAL</text>
+  </g>
+
+  <!-- ============ 2 ============ -->
+  <g transform="translate(715 30)">
+    <circle cx="44" cy="46" r="22" fill="#4A3A40"/><text x="44" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#fff">2</text>
+    <text x="80" y="54" font-family="Georgia, serif" font-size="28" fill="#4A3A40">The player holds R</text>
+    <!-- big R with filling ring -->
+    <circle cx="170" cy="210" r="62" fill="#2A1F26"/>
+    <circle cx="170" cy="210" r="52" fill="none" stroke="#4A3A40" stroke-width="10"/>
+    <circle cx="170" cy="210" r="52" fill="none" stroke="#C9923A" stroke-width="10" stroke-dasharray="245 400" transform="rotate(-90 170 210)" stroke-linecap="round"/>
+    <text x="170" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="44" fill="#F1E6D4">R</text>
+    <use href="#cry" x="470" y="210"/>
+    <path d="M425 210 L 280 210" stroke="#6B3F8A" stroke-width="4" marker-end="url(#p)"/>
+    <text x="352" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="19" fill="#6B3F8A">go here,</text>
+    <text x="352" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="19" fill="#6B3F8A">do "Ruota"</text>
+    <text x="40" y="345" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">When the circle is full, the crystal tells</text>
+    <text x="40" y="375" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">the character where to go and what to do.</text>
+    <rect x="510" y="358" width="120" height="30" rx="15" fill="#6B3F8A"/><text x="570" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#fff">CRYSTAL</text>
+  </g>
+
+  <!-- ============ 3 ============ -->
+  <g transform="translate(30 465)">
+    <circle cx="44" cy="46" r="22" fill="#4A3A40"/><text x="44" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#fff">3</text>
+    <text x="80" y="54" font-family="Georgia, serif" font-size="28" fill="#4A3A40">The character walks there</text>
+    <use href="#cry" x="520" y="210"/>
+    <!-- interaction point -->
+    <circle cx="440" cy="210" r="11" fill="none" stroke="#C9923A" stroke-width="4"/>
+    <path d="M433 203 L 447 217 M447 203 L 433 217" stroke="#C9923A" stroke-width="3"/>
+    <!-- ghost start pose facing away -->
+    <g opacity=".35"><use href="#pl" transform="translate(140 270) rotate(150)"/></g>
+    <path d="M118 250 A 30 30 0 0 1 168 248" fill="none" stroke="#B8203A" stroke-width="3" marker-end="url(#r)"/>
+    <path d="M175 262 Q 300 230 420 214" fill="none" stroke="#B8203A" stroke-width="4" stroke-dasharray="10 9" marker-end="url(#r)"/>
+    <use href="#pl" transform="translate(300 236) rotate(-12)"/>
+    <text x="455" y="258" font-family="Arial, sans-serif" font-size="17" fill="#8a6220">interaction point</text>
+    <text x="40" y="345" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">A Timeline turns it towards the crystal,</text>
+    <text x="40" y="375" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">then moves it forward until it arrives.</text>
+    <rect x="490" y="358" width="140" height="30" rx="15" fill="#B8203A"/><text x="560" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#fff">CHARACTER</text>
+  </g>
+
+  <!-- ============ 4 ============ -->
+  <g transform="translate(715 465)">
+    <circle cx="44" cy="46" r="22" fill="#4A3A40"/><text x="44" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#fff">4</text>
+    <text x="80" y="54" font-family="Georgia, serif" font-size="28" fill="#4A3A40">The action happens</text>
+    <!-- switch -->
+    <rect x="50" y="110" width="200" height="190" rx="12" fill="#2A1F26"/>
+    <text x="150" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="19" fill="#C9923A">Switch on Name</text>
+    <g font-family="Arial, sans-serif" font-size="19" fill="#9a8a8e">
+      <text x="72" y="178">Ascolta</text>
+      <text x="72" y="208" fill="#F1E6D4" font-weight="700">Ruota  ▶</text>
+      <text x="72" y="238">Interagisci</text>
+      <text x="72" y="268">PrendiArmi</text>
+    </g>
+    <use href="#pl" transform="translate(330 210)"/>
+    <text x="330" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#B8203A">animation</text>
+    <path d="M362 210 L 430 210" stroke="#B8203A" stroke-width="4" marker-end="url(#r)"/>
+    <text x="396" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#B8203A">rotate now</text>
+    <g transform="translate(500 210) rotate(15)"><use href="#cry"/></g>
+    <path d="M452 160 A 66 66 0 0 1 560 172" fill="none" stroke="#6B3F8A" stroke-width="4" marker-end="url(#p)"/>
+    <path d="M540 220 L 630 250" stroke="#C9923A" stroke-width="6" stroke-linecap="round"/>
+    <text x="40" y="345" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">The character plays the animation; the</text>
+    <text x="40" y="375" font-family="Arial, sans-serif" font-size="21" fill="#4A3A40">crystal rotates and moves its beam.</text>
+    <rect x="510" y="300" width="120" height="30" rx="15" fill="#6B3F8A"/><text x="570" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#fff">CRYSTAL</text>
+    <rect x="490" y="358" width="140" height="30" rx="15" fill="#B8203A"/><text x="560" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#fff">CHARACTER</text>
+  </g>
+</svg>

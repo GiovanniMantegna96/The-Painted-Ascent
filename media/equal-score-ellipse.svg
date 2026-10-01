@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="330 90 1370 460" width="1000">
+  <rect x="330" y="90" width="1370" height="460" fill="#F5EEE2"/>
+  <defs><marker id="fe" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#B8203A"/></marker></defs>
+  <circle cx="560" cy="310" r="190" fill="none" stroke="#9a8a8e" stroke-width="3" stroke-dasharray="4 9"/>
+  <ellipse cx="660" cy="310" rx="200" ry="173" fill="#C9923A" fill-opacity=".14" stroke="#C9923A" stroke-width="6"/>
+  <circle cx="560" cy="310" r="26" fill="#F1E6D4" stroke="#B8203A" stroke-width="6"/>
+  <path d="M592 310 L 700 310" stroke="#B8203A" stroke-width="6" marker-end="url(#fe)"/>
+  <text x="650" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="26" fill="#B8203A">d</text>
+  <circle cx="400" cy="310" r="26" fill="#6B3F8A"/><text x="400" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#1A1016">A</text>
+  <circle cx="773" cy="224" r="26" fill="#6B3F8A" stroke="#C9923A" stroke-width="7"/><text x="773" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#1A1016">B</text>
+  <g font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#8a6220" text-anchor="middle">
+    <text x="905" y="320">×1</text><text x="600" y="160">×2</text><text x="495" y="300">×3</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="30" fill="#4A3A40">
+    <text x="1010" y="160" font-family="Georgia, serif" font-size="32" fill="#8a6220">Same score on the whole gold curve</text>
+    <text x="1010" y="205">An ellipse with the player at one focus,</text>
+    <text x="1010" y="243">stretched along d: it reaches three</text>
+    <text x="1010" y="281">times farther ahead than behind.</text>
+    <text x="1010" y="355">A is closer, but behind: outside.</text>
+    <text x="1010" y="393">B is farther, but ahead: inside.</text>
+    <text x="1010" y="455" font-family="Georgia, serif" font-style="italic" font-size="30" fill="#B8203A">B wins.</text>
+    <text x="1010" y="515" font-size="22" fill="#7a6a6e">Dashed grey: plain distance, for comparison.</text>
+  </g>
+</svg>

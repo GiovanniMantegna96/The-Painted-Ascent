@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 64" width="520" height="44">
+  <rect x="2" y="2" width="756" height="60" rx="30" fill="#1A1016" stroke="#C9923A" stroke-width="3"/>
+  <circle cx="40" cy="32" r="18" fill="#B8203A"/>
+  <path d="M34 22 L 49 32 L 34 42 Z" fill="#F1E6D4"/>
+  <text x="408" y="40" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="22" letter-spacing="1" fill="#F1E6D4">CLICK TO OPEN THE <tspan fill="#E9B04A">INTERACTIVE BLUEPRINT</tspan></text>
+</svg>
